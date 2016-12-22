@@ -1,7 +1,7 @@
 
 ##SHA.PY
 
-*sha.py* computes the sha2-256/512 hashes. For servers without the binaries. And because I needed a specific output format.
+*sha.py* computes the sha2-256/512 hashes. For servers without the binaries.
 ```
 usage: sha.py [-h] [-5] [-b <size>] file [file ...]
 

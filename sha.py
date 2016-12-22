@@ -24,7 +24,7 @@ pargs.add_argument("-b", "--block-size", dest='chunk', metavar="<size>",type=int
 args = pargs.parse_args();
 
 # --- option validation
-if args.chunk < 0:
+if args.chunk < 1024:
 	args.chunk = DEFAULT_BLOCK_SIZE
 
 # --- check not needed, argparse ensures at least one file.

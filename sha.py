@@ -59,6 +59,7 @@ def sha256(p):
 			hasher.update(buf)
 	return hasher.hexdigest()
 
+# --- don't stop if error, go to next file
 for v in args.files:
 	try:
 		print("{} {}".format(sha256(v), v))

@@ -29,7 +29,7 @@ if args.chunk < 1:
 
 # --- check not needed, argparse ensures at least one file.
 if len(args.files) == 0:
-	exit(0)
+	sys.exit(0)
 
 # --- for throwing exceptions
 class PathError(Exception):

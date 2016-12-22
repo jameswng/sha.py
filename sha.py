@@ -19,7 +19,7 @@ DEFAULT_BLOCK_SIZE = 8 * 1024 * 1024
 pargs = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description='return sha256 digest in hex for named files')
 pargs.add_argument(dest='files', metavar='file', nargs='+', help='filename')
 pargs.add_argument("-5", "--sha512", dest='sha512', action='count', help='generate sha2-512 digest')
-pargs.add_argument("-b", "--block-size", dest='chunk', metavar="<size>",type=int, help='block size to read file, default 8192', default=DEFAULT_BLOCK_SIZE)
+pargs.add_argument("-b", "--block-size", dest='chunk', metavar="<size>",type=int, help='block size to read file, default 8192K', default=DEFAULT_BLOCK_SIZE)
 #
 args = pargs.parse_args();
 

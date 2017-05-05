@@ -1,5 +1,5 @@
 
-##SHA.PY
+## SHA.PY
 
 *sha.py* computes the sha2-256/512 hashes. For servers without the binaries.
 ```
